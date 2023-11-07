@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+class Nawodnienie{
+public:
+    float poziomNawodnienia;
+    float litry;
+
+float obliczPoziom(float poziomNawodnienia,float masa){
+    float wynik=0;
+    cout<<" ###OBLICZANIE ZAPOTRZEBOWANIA NA WODE###"<<endl;
+    wynik=masa/0.030;
+    cout<<wynik;
+    return wynik;
+
+}
+
+void displayInfo(int masa){
+
+
+}
+
+};
+
+int main(){
+
+    float  masa;
+    cout<<"Podaj mase ciala: ";
+    cin>> masa;
+    cout<< " kg ";
+
+    obliczPoziom();
+
+
+    return 0;
+}
