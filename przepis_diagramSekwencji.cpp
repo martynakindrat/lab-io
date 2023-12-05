@@ -68,13 +68,13 @@ public:
     // Metody
     void wyswietlPrzepis() const {
         cout << "Nazwa: " << nazwa << endl;
-        cout << "Sk≥adniki: " << skladniki << endl;
+        cout << "Sk≈Çadniki: " << skladniki << endl;
         cout << "Instrukcja: " << instrukcja << endl;
         cout << endl;
     }
 
     void wyswietlDietaMiesna(const vector<Przepis>& przepisy, const vector<string>& posilki) const {
-        cout << "Jad≥ospis miÍsny:" << endl;
+        cout << "Jad≈Çospis miƒôsny:" << endl;
         for (int i = 0; i < posilki.size(); ++i) {
             cout << posilki[i] << endl;
             przepisy[i].wyswietlPrzepis();
@@ -82,7 +82,7 @@ public:
     }
 
     void wyswietlDietaWeganska(const vector<Przepis>& przepisy, const vector<string>& posilki) const {
-        cout << "Jad≥ospis wegaÒski:" << endl;
+        cout << "Jad≈Çospis wega≈Ñski:" << endl;
         for (int i = 0; i < posilki.size(); ++i) {
             cout << posilki[i] << endl;
             przepisy[i].wyswietlPrzepis();
@@ -90,7 +90,7 @@ public:
     }
 
     void wyswietlDietaWegetarianska(const vector<Przepis>& przepisy, const vector<string>& posilki) const {
-        cout << "Jad≥ospis wegetariaÒski:" << endl;
+        cout << "Jad≈Çospis wegetaria≈Ñski:" << endl;
         for (int i = 0; i < posilki.size(); ++i) {
             cout << posilki[i] << endl;
             przepisy[i].wyswietlPrzepis();
@@ -101,21 +101,21 @@ public:
 int main() {
 
     vector<Przepis> przepisyMiesne = {
-            {"Jajecznica z boczkiem", "Jajka, boczek, cebula, przyprawy", "1. Smaø boczek i cebulÍ. 2. Dodaj roztrzepane jajka i smaø do úciÍcia."},
-            {"Kotlet schabowy", "Schab, jajko, bu≥ka tarta, przyprawy", "1. Obtocz schab w jajku i bu≥ce tartej. 2. Usmaø na patelni z olejem."},
-            {"Kurczak z warzywami", "Pierú z kurczaka, warzywa, przyprawy", "1. Usmaø kurczaka i warzywa na patelni. 2. Przypraw do smaku."}
+            {"Jajecznica z boczkiem", "Jajka, boczek, cebula, przyprawy", "1. Sma≈º boczek i cebulƒô. 2. Dodaj roztrzepane jajka i sma≈º do ≈õciƒôcia."},
+            {"Kotlet schabowy", "Schab, jajko, bu≈Çka tarta, przyprawy", "1. Obtocz schab w jajku i bu≈Çce tartej. 2. Usma≈º na patelni z olejem."},
+            {"Kurczak z warzywami", "Pier≈õ z kurczaka, warzywa, przyprawy", "1. Usma≈º kurczaka i warzywa na patelni. 2. Przypraw do smaku."}
     };
 
     vector<Przepis> przepisyWeganskie = {
-            {"Sa≥atka z awokado", "Awokado, pomidory, cebula, oliwa", "1. PokrÛj sk≥adniki i wymieszaj. 2. Polej oliwπ."},
-            {"Tofu w sosie teriyaki", "Tofu, sos teriyaki, ryø", "1. Usmaø tofu na patelni. 2. Dodaj sos teriyaki. 3. Podawaj z ryøem."},
-            {"Kasza gryczana z warzywami", "Kasza gryczana, warzywa, przyprawy", "1. Ugotuj kaszÍ i warzywa. 2. Przypraw do smaku."}
+            {"Sa≈Çatka z awokado", "Awokado, pomidory, cebula, oliwa", "1. Pokr√≥j sk≈Çadniki i wymieszaj. 2. Polej oliwƒÖ."},
+            {"Tofu w sosie teriyaki", "Tofu, sos teriyaki, ry≈º", "1. Usma≈º tofu na patelni. 2. Dodaj sos teriyaki. 3. Podawaj z ry≈ºem."},
+            {"Kasza gryczana z warzywami", "Kasza gryczana, warzywa, przyprawy", "1. Ugotuj kaszƒô i warzywa. 2. Przypraw do smaku."}
     };
 
     vector<Przepis> przepisyWegetarianskie = {
-            {"Omlet z warzywami", "Jajka, warzywa, ser, przyprawy", "1. Roztrzep jajka, dodaj warzywa i ser. 2. Smaø omlet na patelni."},
-            {"Spaghetti z pomidorami", "Makaron spaghetti, pomidory, bazylia, czosnek", "1. Ugotuj makaron. 2. Podsmaø pomidory z czosnkiem i bazyliπ. 3. Podawaj z makaronem."},
-            {"Sa≥atka grecka", "OgÛrek, pomidor, cebula, oliwki, ser feta", "1. PokrÛj sk≥adniki i wymieszaj. 2. Polej oliwπ i dodaj ser fetÍ."}
+            {"Omlet z warzywami", "Jajka, warzywa, ser, przyprawy", "1. Roztrzep jajka, dodaj warzywa i ser. 2. Sma≈º omlet na patelni."},
+            {"Spaghetti z pomidorami", "Makaron spaghetti, pomidory, bazylia, czosnek", "1. Ugotuj makaron. 2. Podsma≈º pomidory z czosnkiem i bazyliƒÖ. 3. Podawaj z makaronem."},
+            {"Sa≈Çatka grecka", "Og√≥rek, pomidor, cebula, oliwki, ser feta", "1. Pokr√≥j sk≈Çadniki i wymieszaj. 2. Polej oliwƒÖ i dodaj ser fetƒô."}
     };
 	
 	return 0;
